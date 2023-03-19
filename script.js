@@ -1,9 +1,8 @@
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
+  center:new google.maps.LatLng(31.802535609893273, -85.95787215346463),
+  zoom:14,
+ 
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-ctZSihKRdmpWBH06IaTXyuTKnbx01xY&callback=myMap"></script>
