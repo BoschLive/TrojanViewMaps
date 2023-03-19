@@ -15,10 +15,22 @@ marker1.setMap(map);
 const directionsService = new google.maps.DirectionsService();
 const directionsDisplay = new google.maps.DirectionsDirectionsDisplay();
 directionsDisplay.setMap(map);
-directionsService.route(
-  origin: document.getElementByID('start').value,
-  destination: document.getElementByID('destination').value,
-  travelMode: "DRIVING"
-);
-  
+
+var onChangeHandler = funtion() {
+  displayRoute(directionsService, directionsDisplay);
+};
+  document.getElementById('start').addEventListener('change',onChangeHandler);
+  document.getElementById('destination').addEventListener('change',onChangeHandler);
 }
+
+
+function displayRoute(directionsService, directionsDisplay) {
+  directionsService.route({
+    origin: document.getElementById('start').value,
+    destination: document.getElementById('destination').value,
+    travelMode: 'DRIVING'
+   });
+ }
+  
+  
+
