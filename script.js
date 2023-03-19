@@ -15,7 +15,7 @@ let directionsService = new google.maps.DirectionsService();
 let directionsDisplay = new google.maps.DirectionsDirectionsDisplay();
 directionsDisplay.setMap(map);
 
-var onChangeHandler = function() {
+let onChangeHandler = function() {
   calculateAndDisplayRoute(directionsService, directionsDisplay);
 };
    document.getElementById('start').addEventListener('change', onChangeHandler);
