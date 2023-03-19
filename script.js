@@ -6,3 +6,8 @@ var mapProp= {
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+
+const marker = new google.maps.Marker({
+  position:{lat:31.8026, lng:85.9572},
+  map:map
+});
