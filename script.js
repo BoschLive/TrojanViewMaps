@@ -6,17 +6,17 @@ let mapProp= {
 };
 let map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-const marker1 = new google.maps.Marker({
+let marker1 = new google.maps.Marker({
   position:new google.maps.LatLng(31.802535609893273, -85.95787215346463)
 });
 
 marker1.setMap(map);
 
-const directionsService = new google.maps.DirectionsService();
-const directionsDisplay = new google.maps.DirectionsDirectionsDisplay();
+let directionsService = new google.maps.DirectionsService();
+let directionsDisplay = new google.maps.DirectionsDirectionsDisplay();
 directionsDisplay.setMap(map);
 
-var onChangeHandler = funtion() {
+let onChangeHandler = funtion() {
   displayRoute(directionsService, directionsDisplay);
 };
   document.getElementById('start').addEventListener('change',onChangeHandler);
