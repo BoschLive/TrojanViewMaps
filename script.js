@@ -16,21 +16,7 @@ let directionsService = new google.maps.DirectionsService();
 let directionsDisplay = new google.maps.DirectionsDirectionsDisplay();
 directionsDisplay.setMap(map);
 
-let onChangeHandler = funtion() {
-  displayRoute(directionsService, directionsDisplay);
-};
-  document.getElementById('start').addEventListener('change',onChangeHandler);
-  document.getElementById('destination').addEventListener('change',onChangeHandler);
 }
-
-
-function displayRoute(directionsService, directionsDisplay) {
-  directionsService.route({
-    origin: document.getElementById('start').value,
-    destination: document.getElementById('destination').value,
-    travelMode: 'DRIVING'
-   });
- }
   
   
 
