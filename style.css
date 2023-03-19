@@ -3,6 +3,10 @@
   border: 5px solid #41403F;
 }
 
+#banner {
+  margin: auto;
+}
+
 body{
   background-color: #9A1C07;
 }
