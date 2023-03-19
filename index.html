@@ -14,7 +14,7 @@
 <div id="googleMap"  style="width:75%; height:500px;"></div>
 
 <h3>Start: </h3>
-<select id="start">
+<select id="start" onchange="calculateAndDisplayRoute()">
   <option value="600 University Ave, Troy, AL 36082">Troy University</option>
   <option value="1420 US-231, Troy, AL 36081">Walmart</option>
   <option value="1147 US Hwy 231 S, Troy, AL 36081">Publix</option>
@@ -23,7 +23,7 @@
 </select>
   
 <h3>Destination: </h3>
-<select id="end">
+<select id="end" onchange="calculateAndDisplayRoute()">
   <option value="600 University Ave, Troy, AL 36082">Troy University</option>
   <option value="1420 US-231, Troy, AL 36081">Walmart</option>
   <option value="1147 US Hwy 231 S, Troy, AL 36081">Publix</option>
