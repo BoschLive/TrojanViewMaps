@@ -1,6 +1,8 @@
 #googleMap {
   margin: auto;
   border: 5px solid #41403F;
+  width:75%;
+  height:500px;
 }
 
 body{
