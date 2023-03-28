@@ -8,8 +8,12 @@
   font-family: "Impact";
 }
 
+h1{
+  color: #9A1C07;
+}
+
 body{
-  background-color: #9A1C07;
+  background-color: #9E9F9F;
 }
 
 select{
